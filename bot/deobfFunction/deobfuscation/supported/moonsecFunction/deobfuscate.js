@@ -1,16 +1,16 @@
 "use strict";
 
+const { runObfuscator } = require("../../../luneRunner");
+
 /**
- * Moonsec obfuscator deobfuscation stub.
- * TODO: Implement actual deobfuscation logic.
+ * Moonsec deobfuscation via lune runner.
  * @param {string} source - Lua source code
+ * @param {object} [opts]
+ * @param {number} [opts.timeoutMs]
  * @returns {Promise<{ code: string, notes?: string[] }>}
  */
-async function deobfuscate(source) {
-  // TODO: Implement actual deobfuscation logic
-  const err = new Error("Moonsec deobfuscation not implemented yet");
-  err.code = "UNSUPPORTED";
-  throw err;
+async function deobfuscate(source, opts = {}) {
+  return runObfuscator("moonsec", source, opts);
 }
 
 module.exports = { deobfuscate };

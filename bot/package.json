@@ -1,13 +1,25 @@
 {
   "name": "69ms-logger-bot",
-  "version": "1.0.0",
-  "private": true,
-  "type": "commonjs",
+  "version": "2.0.0",
+  "description": "Discord bot for Lua deobfuscation with Components v2 UI",
   "main": "index.js",
+  "type": "commonjs",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "check": "node --check index.js && node --check src/**/*.js && node --check deobfFunction/**/*.js"
   },
+  "keywords": [
+    "discord",
+    "lua",
+    "deobfuscation",
+    "roblox"
+  ],
+  "author": "",
+  "license": "MIT",
   "dependencies": {
     "discord.js": "^14.16.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }

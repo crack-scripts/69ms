@@ -1,0 +1,10 @@
+{
+  "token": "YOUR_BOT_TOKEN_HERE",
+  "channelId": "YOUR_CHANNEL_ID_HERE",
+  "prefix": ".",
+  "logger": "69ms/httplog2.lua",
+  "dumper": "69ms/luraphdump.lua",
+  "loadstringlog": "69ms/loadstringlog.lua",
+  "timeoutMs": 125000,
+  "maxConcurrent": 5
+}
